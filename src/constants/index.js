@@ -1,3 +1,7 @@
+import { profil } from "../assets";
+
+export const profilImage = profil;
+
 import {
     Linkedin,
     Github,

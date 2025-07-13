@@ -1,10 +1,11 @@
 import { NavLink } from 'react-router-dom';
+import { profilImage } from '../constants';
 
 const Sidebar = ({ isOpen }) => {
     return (
         <aside className={`fixed top-0 left-0 w-64 bg-blue-600 text-white p-4 z-50 transition-transform transform ${isOpen ? "translate-x-0" : "-translate-x-full"} md:relative md:translate-x-0 md:block`}>
             <div className='flex justify-center items-center mt-12 mb-12'>
-                <img src="/Yapeaud.png" alt="" className='w-32 h-32 rounded-full border-4 border-blue-400' />
+                <img src={profilImage} alt="" className='w-32 h-32 rounded-full border-4 border-blue-400' />
             </div>
             <nav className="flex flex-col space-y-4 justify-center items-center">
                 <NavLink
