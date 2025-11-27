@@ -11,6 +11,7 @@ import EducationSection from './components/EducationSection';
 import SkillsSection from './components/SkillsSection';
 import InterestsSection from './components/InterestsSection';
 import AwardsSection from './components/AwardsSection';
+import Accomplishments from './components/AccomplishmentsSection';
 
 
 function App() {
@@ -22,37 +23,38 @@ function App() {
 
   return (
     <>
-    <Router>
-      <div className="flex">
-        {/* Overlay for mobile */}
-        {isSidebarOpen && (
-          <div
-            className="fixed inset-0 bg-black opacity-50 z-40 md:hidden"
-            onClick={toggleSidebar}
-          />
-        )}
+      <Router>
+        <div className="flex">
+          {/* Overlay for mobile */}
+          {isSidebarOpen && (
+            <div
+              className="fixed inset-0 bg-black opacity-50 z-40 md:hidden"
+              onClick={toggleSidebar}
+            />
+          )}
 
-        {/* Sidebar */}
-        <Sidebar isOpen={isSidebarOpen} closeSidebar={() => setIsSidebarOpen(false)} />
+          {/* Sidebar */}
+          <Sidebar isOpen={isSidebarOpen} closeSidebar={() => setIsSidebarOpen(false)} />
 
-        {/* Content */}
-        <div className="flex-1 flex flex-col">
-          {/* Navbar visible only on small screens */}
-          <Navbar toggleSidebar={toggleSidebar} />
+          {/* Content */}
+          <div className="flex-1 flex flex-col">
+            {/* Navbar visible only on small screens */}
+            <Navbar toggleSidebar={toggleSidebar} />
 
-          <main className="p-6 bg-gray-100 min-h-screen">
-            <Routes>
-              <Route path="/" element={<AboutSection />} />
-              <Route path="/experience" element={<ExperienceSection />} />
-              <Route path="/education" element={<EducationSection />} />
-              <Route path="/skills" element={<SkillsSection />} />
-              <Route path="/interests" element={<InterestsSection />} />
-              <Route path="/awards" element={<AwardsSection />} />
-            </Routes>
-          </main>
+            <main className="p-6 bg-gray-100 min-h-screen">
+              <Routes>
+                <Route path="/" element={<AboutSection />} />
+                <Route path="/experience" element={<ExperienceSection />} />
+                <Route path="/education" element={<EducationSection />} />
+                <Route path="/skills" element={<SkillsSection />} />
+                <Route path="/interests" element={<InterestsSection />} />
+                <Route path="/awards" element={<AwardsSection />} />
+                <Route path="/accomplishments" element={<Accomplishments />} />
+              </Routes>
+            </main>
+          </div>
         </div>
-      </div>
-    </Router>
+      </Router>
     </>
   )
 }

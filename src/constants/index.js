@@ -1,12 +1,17 @@
-import { profil } from "../assets";
+import { profil, imgProject1, imgProject2, imgPoject3, imgProject4, imgProject5 } from "../assets";
 
 export const profilImage = profil;
+export const imgProjectFlewa = imgProject1;
+export const imgProjectMeteo = imgProject2;
+export const imgProjectEspace = imgPoject3;
+export const imgProjectFair = imgProject4;
+export const imgPojectTodoEvents = imgProject5
 
 import {
     Linkedin,
     Github,
     Facebook,
-} from "lucide-react";
+} from "lucide-react";;
 
 export const socialLinks = [
     { href: "https://www.linkedin.com/in/beda-yapeaud-062979262/", icon: Linkedin, name: "LinkedIn" },
@@ -76,3 +81,46 @@ export const awards = [
     "Certificate of Completion - Référent Digital - Ivoir Geek School (2021)",
 
 ];
+
+export const projects = [
+        {
+            id: 1,
+            title: "Application de gestion d'évenements",
+            description: "Une application full-stack permettant de créer, éditer et supprimer des evenements.",
+            techStack: ["React", "Node.js", "Express.js",  "MongoDB"],
+            link: "https://mini-event-finder-hazel.vercel.app/",
+            imageUrl: imgPojectTodoEvents
+        },
+        {
+            id: 2,
+            title: "API de météo personnalisée",
+            description: "Une API REST qui récupère les données météo et les formatte pour une interface utilisateur élégante.",
+            techStack: ["Express.js", "OpenWeather API", "Axios"],
+            link: "https://meteo-bds.vercel.app/",
+            imageUrl: imgProjectMeteo
+        },
+        {
+            id: 3,
+            title: "Application de messagerie instantane",
+            description: "Une application full-stack permettant de communiquer en temps réel avec des utilisateurs.",
+            techStack: ["React", "Node.js", "MongoDB"],
+            link: "https://flewa.onrender.com/login",
+            imageUrl: imgProjectFlewa
+        },
+        {
+            id: 4,
+            title: "Site vitrine pour une officine",
+            description: "Une application pour une officine de vente de produits de lunette.",
+            techStack: ["React", "Tailwind CSS"],
+            link: "https://espace-vision.vercel.app/",
+            imageUrl: imgProjectEspace
+        },
+        {
+            id: 5,
+            title: "Application Business Fair",
+            description: " plateforme technologique dédiée au développement économique durable en Afrique",
+            techStack: ["React", "Tailwind CSS"],
+            link: "https://fair-growth-africa.vercel.app/",
+            imageUrl: imgProjectFair
+        }
+    ];

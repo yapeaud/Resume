@@ -45,6 +45,12 @@ const Sidebar = ({ isOpen }) => {
                 >
                     AWARDS
                 </NavLink>
+                <NavLink
+                    to="/accomplishments"
+                    className={({ isActive }) => `font-semibold flex items-center gap-2 hover:text-blue-700 ${isActive ? "text-blue-300" : ""}`}
+                >
+                    ACCOMPLISHMENTS
+                </NavLink>
             </nav>
         </aside>
     );
