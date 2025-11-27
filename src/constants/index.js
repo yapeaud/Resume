@@ -1,9 +1,9 @@
-import { profil, imgProject1, imgProject2, imgPoject3, imgProject4, imgProject5 } from "../assets";
+import { profil, imgProject1, imgProject2, imgProject3, imgProject4, imgProject5 } from "../assets";
 
 export const profilImage = profil;
 export const imgProjectFlewa = imgProject1;
 export const imgProjectMeteo = imgProject2;
-export const imgProjectEspace = imgPoject3;
+export const imgProjectEspace = imgProject3;
 export const imgProjectFair = imgProject4;
 export const imgPojectTodoEvents = imgProject5
 
