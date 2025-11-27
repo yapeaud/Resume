@@ -5,7 +5,7 @@ export const imgProjectFlewa = imgProject1;
 export const imgProjectMeteo = imgProject2;
 export const imgProjectEspace = imgProject3;
 export const imgProjectFair = imgProject4;
-export const imgPojectTodoEvents = imgProject5
+export const imgProjectTodoEvents = imgProject5
 
 import {
     Linkedin,
@@ -89,7 +89,7 @@ export const projects = [
             description: "Une application full-stack permettant de créer, éditer et supprimer des evenements.",
             techStack: ["React", "Node.js", "Express.js",  "MongoDB"],
             link: "https://mini-event-finder-hazel.vercel.app/",
-            imageUrl: imgPojectTodoEvents
+            imageUrl: imgProjectTodoEvents
         },
         {
             id: 2,
